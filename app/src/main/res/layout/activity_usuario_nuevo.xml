@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.edsonchambi.gusteau.usuario_nuevo"
+    android:background="#fffff10a"
+    android:clickable="false">
+
+    <TextView android:text="USUARIO NUEVO" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffff3200"
+        android:textSize="40sp"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:id="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarme"
+        android:id="@+id/btnresgitrar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#fffffdf7"
+        android:background="#ff5492ff"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:width="250dp"
+        android:singleLine="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ednombre"
+        android:layout_marginTop="50dp"
+        android:width="250dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/ednit_ci"
+        android:layout_alignStart="@+id/ednit_ci"
+        android:textSize="20sp"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ednit_ci"
+        android:singleLine="false"
+        android:width="250dp"
+        android:layout_below="@+id/ednombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edemail"
+        android:layout_below="@+id/ednit_ci"
+        android:layout_alignLeft="@+id/ednit_ci"
+        android:layout_alignStart="@+id/ednit_ci"
+        android:layout_marginTop="44dp"
+        android:singleLine="false"
+        android:textSize="20sp"
+        android:width="250dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edpassword"
+        android:layout_below="@+id/edemail"
+        android:layout_alignLeft="@+id/edemail"
+        android:layout_alignStart="@+id/edemail"
+        android:layout_marginTop="45dp"
+        android:width="250dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NIT/CI:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/ednombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E-mail:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/ednit_ci"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password:"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/edemail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:singleLine="false" />
+
+</RelativeLayout>

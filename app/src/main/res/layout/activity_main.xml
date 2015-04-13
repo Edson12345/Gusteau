@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.edsonchambi.gusteau.MainActivity"
+    android:background="#fffff10a"
+    android:clickable="false">
+
+    <TextView android:text="GUSTEAU" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffff3200"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:id="@+id/textView17" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textView17"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="&quot;El Sabroso&quot;"
+        android:id="@+id/textView18"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="El de buen"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gusto"
+        android:id="@+id/textView20"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/twitter" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/google" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Iniciar QR"
+        android:drawableLeft="@drawable/image"
+        android:id="@+id/btnQR"
+        android:textSize="30sp"
+        android:longClickable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnperfil"
+        android:layout_alignEnd="@+id/btnperfil"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:paddingLeft="20dp"
+        android:background="#ff5492ff"
+        android:textColor="#fffffdf7"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Perfil Usuario"
+        android:drawableLeft="@drawable/perfil"
+        android:id="@+id/btnperfil"
+        android:layout_below="@+id/btnQR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:paddingLeft="20dp"
+        android:background="#ff5492ff"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#fffffdf7" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Salir"
+        android:drawableLeft="@drawable/salir"
+        android:id="@+id/btnsalir"
+        android:textSize="30sp"
+        android:layout_below="@+id/btnperfil"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="20dp"
+        android:background="#ff5492ff"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#fffffdf7" />
+
+</RelativeLayout>
